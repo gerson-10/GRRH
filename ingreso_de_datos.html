@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="Js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Ingreso de Datos</title>
+</head>
+<body background="Images\enlaces.jpg">
+    <div class="panel panel-primary">
+        <div class="panel-heading"><center><B>Ejemplo de Ingreso de Datos a BIBLIOTECA MUSICAL</B></center></div><br> 
+        <a href="index.html"><center><button><B>Regresar al Menu</B></button></center></a><br>
+         <div class="panel-body">   
+         <form action="datos.jsp" method="post"><center>
+                <label>Cancion:</label>
+                <input id="cancion" name="cancion" size="50" autofocus required><br><br>
+                <label>Artista:</label>
+                <input id="artista" name="artista" size="50" required ><br><br>
+                <label>Album:</label>
+                <input id="album" name="album" size="50" required ><br><br>
+                <label>Genero:</label><br>
+                <input type="radio" name="genero" value="rock"> rock
+                <input type="radio" name="genero" value="hip hop"> hip hop
+                <input type="radio" name="genero" value="pop"> pop
+                <input type="radio" name="genero" value="regaeton"> regaeton
+                <input type="radio" name="genero" value="rap"> rap
+                <input type="radio" name="genero" value="bachata"> bachata
+                <input type="radio" name="genero" value="cumbia"> cumbia<br><br>
+                <label>Año de Album:</label>
+                <input type="number" name="anio" value="2019" size="6"required ><br><br>
+                <label>Fecha de ingreso:</label>
+                <input type="date" name="fecha" step="1" min="2017-11-08" value="2019-07-19"><br><br>
+                <label>Calificacion:</label><br>
+                <input type="radio" name="calificacion" value="1"> regular
+                <input type="radio" name="calificacion" value="2"> buena
+                <input type="radio" name="calificacion" value="3"> muy buena<br><br>
+                <button type="submit" class="btn btn-primary">Guardar</button></center>
+            </form>
+      </div> 
+</body>
+</html>
